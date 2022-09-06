@@ -11405,7 +11405,7 @@ p.lead {
     width: 100%;
     background-color: var(--bs-body-bg);
     padding: 25px 30px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    /*box-shadow: 5px 5px 10px rgba(0,0,0,0.2);*/
 }
 
 
@@ -11543,6 +11543,33 @@ p.lead {
     content: "65%";
 }
 
+.gameContent {
+
+    width:50vw;
+    height:50vh;
+}
+
+.gameContent:hover{
+    color: var(--bs-orange);
+}
+.gameContent:hover h3{
+    color: var(--bs-orange);
+}
+.ImgGames{
+    width:90%;
+    height:90%;
+}
+.sketchfab-embed-wrapper {
+    width: 100%;
+    height: 50vh;
+}
+.iframeSketchfab{
+    width:100%;
+    height:100%;
+}
+/*div[class|="col"] {
+    border: 1px solid #ffc107;
+}*/
 section.resume-section {
     display: flex;
     align-items: center;
@@ -11555,9 +11582,8 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
-
 @media (min-width: 768px) {
-  section.resume-section {
+    section .resume-section {
     min-height: 100vh;
   }
 }
