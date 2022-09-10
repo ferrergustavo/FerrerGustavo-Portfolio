@@ -11334,9 +11334,10 @@ p.lead {
   font-size: 1.5rem;
 }
 
+
 #sideNav {
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -11366,9 +11367,9 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
+    max-width: 9.2rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.3rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11406,11 +11407,11 @@ p.lead {
 .social-icons .social-icon:hover {
   background-color: #bd5d38;
 }
-/*
+
 .dev-icons {
   font-size: 3rem;
 }
-*/
+
 .skills-Content {
     width: 100%;
     background-color: var(--bs-body-bg);
@@ -11505,52 +11506,84 @@ p.lead {
 
 /* Progress Line */
 .progress-line.unity span {
-    width: 75%;
+    width: 45%;
 }
 
 .progress-line.htmlcss span {
-    width: 85%;
-}
-
-.progress-line.mysql span {
-    width: 80%;
-}
-
-.progress-line.c span {
-    width: 70%;
-}
-
-.progress-line.php span {
-    width: 70%;
-}
-
-.progress-line.javascript span {
     width: 65%;
 }
 
+.progress-line.mysql span {
+    width: 40%;
+}
+
+.progress-line.c span {
+    width: 45%;
+}
+
+.progress-line.php span {
+    width: 35%;
+}
+
+.progress-line.javascript span {
+    width: 30%;
+}
+
+.progress-line.java span {
+    width: 30%;
+}
+
+.progress-line.maya span {
+    width: 35%;
+}
+
+.progress-line.photoshop span {
+    width: 60%;
+}
+
+.progress-line.substance span {
+    width: 40%;
+}
+
 /* Progress Line after*/
+.progress-line.substance span::after {
+    content: "40%";
+}
+
+.progress-line.photoshop span::after {
+    content: "60%";
+}
+
+.progress-line.maya span::after {
+    content: "35%";
+}
+
+.progress-line.java span::after {
+    content: "30%";
+}
+
 .progress-line.unity span::after {
-    content: "75%";
+    content: "45%";
 }
 
 .progress-line.htmlcss span::after {
-    content: "85%";
+    content: "65%";
 }
 
 .progress-line.mysql span::after {
-    content: "80%";
+    content: "40%";
 }
 
 .progress-line.c span::after {
-    content: "70%";
+    content: "45%";
 }
 
 .progress-line.php span::after {
-    content: "70%";
+    content: "35%";
 }
 
 .progress-line.javascript span::after {
-    content: "65%";
+    content: "30%";
 }
 
 .gameContent {
@@ -11604,13 +11637,20 @@ p.lead {
     backface-visibility: hidden;
 }
 
+.card-back-social{
+    text-align:center;
+    padding-top:5rem;
+}
+
 .flip-card-front {
     background-color: rgba(154,154,154,0.2);
     color: black;
 }
 
 .flip-card-back {
-    background-color: rgba(90,90,90,0.2);
+    padding:2rem;
+    text-align:initial;
+    background-color: rgba(40,40,40);
     color: white;
     transform: rotateY(180deg);
 }
@@ -11628,6 +11668,7 @@ p.lead {
 }
 
 
+
 .sketchfab-embed-wrapper {
     width: 100%;
     height: 50vh;
@@ -11636,6 +11677,7 @@ p.lead {
     width:100%;
     height:100%;
 }
+
 /*div[class|="col"] {
     border: 1px solid #ffc107;
 }*/
@@ -11663,7 +11705,7 @@ section.resume-section .resume-section-content {
 }
 .containerAbout {
     border-radius: 2%;
-    background-color: rgba(1,1,1,0.6);
+    background-color: rgba(1,1,1,0.7);
     padding-left:20px;
     padding-bottom:20px;
     padding-top:20px;
