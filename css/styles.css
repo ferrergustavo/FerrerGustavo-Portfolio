@@ -64,11 +64,7 @@
   --bs-body-bg: #111/*#fff*/;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -11415,7 +11411,7 @@ p.lead {
 .skills-Content {
     width: 100%;
     background-color: var(--bs-body-bg);
-    padding: 25px 30px;
+    padding: 0% 50%;
     /*box-shadow: 5px 5px 10px rgba(0,0,0,0.2);*/
 }
 
@@ -11475,7 +11471,7 @@ p.lead {
     height: 0;
     width: 0;
     right:0;
-    top: -10px;
+    top: 10px;
     border: 7px solid transparent;
     border-bottom-width:0px;
     border-right-width:0px;
@@ -11486,8 +11482,8 @@ p.lead {
 
 .bar .progress-line span::after {
     position: absolute;
-    right: 0;
-    top: -28px;
+    right: -37px;
+    top: 12px;
     color: #fff;
     font-size: 12px;
     font-weight: 500;
@@ -11600,12 +11596,11 @@ p.lead {
 }
 .ImgGames {
     padding-top: 20px;
-    width: 20%;
     height: 20%;
 }
 .ImgGamesGlad {
     padding-top:30px;
-    width: 35%;
+    width: 95%;
     height: 20%;
 }
 /*        CARD FLIP           */
@@ -11648,8 +11643,8 @@ p.lead {
 }
 
 .flip-card-back {
-    padding:2rem;
-    text-align:initial;
+    padding:0.3rem;
+    text-align:center;
     background-color: rgba(40,40,40);
     color: white;
     transform: rotateY(180deg);
@@ -11710,16 +11705,152 @@ section.resume-section .resume-section-content {
     padding-bottom:20px;
     padding-top:20px;
 }
+
+@media (max-width:477px) {
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        width: 85vw;
+    }
+
+    body {
+        width: 42vh;
+    }
+}
+
 @media (min-width: 768px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
     section .resume-section {
     min-height: 100vh;
   }
+
+    .bar .progress-line span::before {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        right: 0;
+        top: -10px;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+    }
+
+    .bar .progress-line span::after {
+        position: absolute;
+        right: 0;
+        top: -28px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        background: #000;
+        padding: 1px 8px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+    }
+
+    .skills-Content {
+        width: 100%;
+        background-color: var(--bs-body-bg);
+        padding: 25px 30px;
+        /*box-shadow: 5px 5px 10px rgba(0,0,0,0.2);*/
+    }
+
+    .flip-card-back {
+        padding: 2rem;
+        text-align: initial;
+        background-color: rgba(40,40,40);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .ImgGames {
+        padding-top: 20px;
+        width: 20%;
+        height: 20%;
+    }
+
+    .ImgGamesGlad {
+        padding-top: 30px;
+        width: 35%;
+        height: 20%;
+    }
 }
 @media (min-width: 992px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+
+    .bar .progress-line span::before {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        right: 0;
+        top: -10px;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+    }
+
+    .bar .progress-line span::after {
+        position: absolute;
+        right: 0;
+        top: -28px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        background: #000;
+        padding: 1px 8px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+    }
+
+    .skills-Content {
+        width: 100%;
+        background-color: var(--bs-body-bg);
+        padding: 25px 30px;
+        /*box-shadow: 5px 5px 10px rgba(0,0,0,0.2);*/
+    }
+
+    .flip-card-back {
+        padding: 2rem;
+        text-align: initial;
+        background-color: rgba(40,40,40);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .ImgGames {
+        padding-top: 20px;
+        width: 20%;
+        height: 20%;
+    }
+
+    .ImgGamesGlad {
+        padding-top: 30px;
+        width: 35%;
+        height: 20%;
+    }
 }
