@@ -11704,6 +11704,7 @@ section.resume-section .resume-section-content {
     padding-left:20px;
     padding-bottom:20px;
     padding-top:20px;
+    margin-left:-9px;
 }
 
 @media (max-width:477px) {
@@ -11713,7 +11714,7 @@ section.resume-section .resume-section-content {
     }
 
     body {
-        width: 42vh;
+        width: 100vw;
     }
 }
 
