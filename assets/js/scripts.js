@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const cards = document.querySelectorAll('.character-card');
+
     const modalOverlay = document.getElementById('modalOverlay');
-    const modalImg = document.getElementById('modalImg');
-    const modalSketchfab = document.getElementById('modalSketchfab');
     const modalTitle = document.getElementById('modalTitle');
     const modalDesc = document.getElementById('modalDesc');
     const modalDownload = document.getElementById('modalDownload');
+    const modalGithub = document.getElementById('modalGithub');
+    const modalMedia = document.getElementById('modalMedia');
     const closeModalBtn = document.getElementById('closeModal');
 
     let activeCard = null;
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activeCard = card;
 
         const type = card.dataset.type;
+
 
         modalTitle.textContent = card.dataset.title;
         modalDesc.innerHTML = '';
@@ -33,17 +35,32 @@ document.addEventListener("DOMContentLoaded", () => {
         modalDownload.style.display = 'none';
 
         if (type === 'game') {
+            if (card.dataset.github) {
+                modalGithub.href = card.dataset.github;
+                modalGithub.style.display = 'inline-flex';
+            } else {
+                modalGithub.style.display = 'none';
+            }
             modalImg.src = card.dataset.image;
             modalImg.style.display = 'block';
 
             modalDownload.href = card.dataset.download;
             modalDownload.style.display = 'inline-block';
+            
         }
 
         if (type === 'model') {
             modalSketchfab.src = card.dataset.sketchfab;
             modalSketchfab.style.display = 'block';
+            if (card.dataset.github) {
+                modalGithub.href = card.dataset.github;
+                modalGithub.style.display = 'inline-flex';
+            } else {
+                modalGithub.style.display = 'none';
+            }
         }
+
+
 
         modalOverlay.style.display = 'flex';
     }
